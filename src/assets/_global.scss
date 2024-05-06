@@ -1,0 +1,49 @@
+html,
+body {
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    background: #171717;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #171717;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #4B515A;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #4B515A;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin-bottom: 100px;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1710px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 550px) {
+    .main {
+        margin-bottom: 50px;
+    }
+}
